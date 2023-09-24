@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/fdf5d9ddc3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="./img/contact/portlogo.png" alt="port logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Profile</a>
+          </li>
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <section>
+        <section id="home">
+         <div>
+          <h1>Welcome to my Contact Page</h1>
+         </div>
+        </section>
+    <section id="SocialContainer">
+        <div>
+            <article>
+                <h2><i class="fa-solid fa-earth-americas fa-2xl" style="color: #ffffff;"></i> Social Media</h2>
+                <p><i class="fa-brands fa-facebook fa-lg" style="color: white"></i> Facebook</p>
+                <p><i class="fa-brands fa-square-twitter fa-lg" style="color: white;"></i> Twitter</p>
+                <p><i class="fa-brands fa-instagram fa-lg" style="color: white;"></i> Instagram</p>
+                <p><i class="fa-brands fa-linkedin fa-lg" style="color: white;"></i> Linkedin</p>
+                <p><i class="fa-brands fa-discord fa-lg" style="color: white;"></i> Discord</p>
+            </article>
+        </div>
+        <div id="formContainer">
+           <h2><i class="fa-sharp fa-solid fa-pen-to-square fa-xl" style="color: white;"></i> Write us</h2>
+            <form> <!-- action="submit.php" method="POST" to add after form as id to activate submit later-->
+                 <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                 </div>
+                 <div>
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" required>
+                 </div>
+                <div>
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea type="message" name="message" rows="5" cols="30" required></textarea>   
+                </div>
+                <div>
+                  <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </section>
+ </body>
+</html>
