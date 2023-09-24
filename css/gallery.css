@@ -1,0 +1,137 @@
+html {
+    scroll-padding-top: 100px; /* With position sticky in the header, when we click on the links in the nav, the elements we want to jump to will be rendered behind the header, this will fix that issue. Our header's height is 100px so we have a scroll padding at the top of 100px to fix that. */
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-image: url(../img/gallery/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* NAV */
+  
+  header {
+    background-color: rgb(0, 0, 0);
+    margin: -8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  header img {
+    width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    border: 2px solid goldenrod;
+    padding: 15px;
+    margin: 5px;
+    display: block;
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+  
+  /* MAIN HEADING */
+  @keyframes slideFromRight {
+    0% {
+      transform: translate(20%);
+    }
+    50% {
+      transform: translate(-200%);
+    }
+  }
+  
+  #home div {
+    margin: 0px -8px 0px -8px ;
+    border: 2px black  solid;
+    background-color: rgb(0, 0, 0);
+    color: goldenrod;
+    text-transform: uppercase;
+    height: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    overflow: hidden;
+    animation: slideFromRight linear 6s infinite forwards;
+  }
+  .container {
+      display: flex;
+      
+  }
+  
+  .productContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* This will put a space between the children of this container */
+}
+
+#products article {
+    border: 2px white solid;
+    background-color: lightblue;
+    color: white;
+    padding: 0px 15px;
+    width: 40%;
+}
+
+#products article h3 {
+    text-align: center;
+}
+
+/* GALLERY */
+#gallery {
+  margin-top: 7%;
+}
+#gallery div {
+    display: flex;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 400px;
+    border: 8px #1b1b1b solid;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(0.8) rotate(-180deg);
+    }
+
+    100% {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+
+#gallery img:hover {
+    animation: pop 0.5s forwards;
+    box-shadow: 5px 5px 5px goldenrod;
+}
+
+.placeHolderDiv {
+    width: 415px;
+}
